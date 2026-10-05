@@ -459,9 +459,11 @@ Future<bool?> loginDialog() async {
   // No enviarlas al API de cuentas heredado del cliente remoto.
   if (isDesktop) {
     return gFFI.dialogManager.show<bool>((setState, close, context) {
-      return AlertDialog(
+      return CustomAlertDialog(
         title: const Text('SSO corporativo · SGO Soporte Remoto'),
+        contentBoxConstraints: const BoxConstraints(maxWidth: 620),
         content: const SizedBox(width: 620, height: 440, child: SgoDirectory()),
+        onCancel: () => close(false),
         actions: [TextButton(onPressed: () => close(false), child: const Text('Cerrar'))],
       );
     });
