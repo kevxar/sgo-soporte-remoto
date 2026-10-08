@@ -6,7 +6,9 @@ Repositorio corporativo: https://github.com/kevxar/sgo-soporte-remoto
 ## Cambios corporativos
 
 - Nombre visible SGO Soporte Remoto, logo e isotipo de Electroram.
-- Servidor hbbs/hbbr corporativo y clave publica incorporados al compilar.
+- Servidor ID/Relay `sgo.soporte.electroram.cl` y clave publica corporativa
+  incorporados al compilar. El alias anterior permanece en DNS mientras los
+  agentes instalados migran sin perder su ID ni la configuracion local.
 - Integracion con el agente SGO: estado, sincronizacion, reparacion y actualizacion.
 - Directorio de equipos con autorizacion del administrador verificada por SGO.
 - Inicio corporativo mediante el SSO de SGO en el navegador, con cuenta
